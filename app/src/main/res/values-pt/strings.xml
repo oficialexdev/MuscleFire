@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Muscle Fire</string>
+    <string name="login_label">Entrar com Google</string>
+    <string name="add_training">Add novo treino</string>
+</resources>

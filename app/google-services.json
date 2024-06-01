@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "650938734155",
+    "project_id": "musclefire-3fcf6",
+    "storage_bucket": "musclefire-3fcf6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:650938734155:android:163ac9b97cf1772420dfce",
+        "android_client_info": {
+          "package_name": "com.oficialexdev.musclefire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "650938734155-thc057je46oa33sfnucue94jd2kdplf1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.oficialexdev.musclefire",
+            "certificate_hash": "897d47e89c14e4f35351bef814e2dafb5b644e6c"
+          }
+        },
+        {
+          "client_id": "650938734155-nt3slks5arlbvag62cu3borjfidguuh5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjI8hlNA4zoGYnkmb6qGLgdx_S35u77xw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "650938734155-nt3slks5arlbvag62cu3borjfidguuh5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

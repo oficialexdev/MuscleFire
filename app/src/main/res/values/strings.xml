@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Muscle Fire</string>
+    <string name="client_id" translatable="false">650938734155-nt3slks5arlbvag62cu3borjfidguuh5.apps.googleusercontent.com</string>
+    <string name="login_label">Login with Google</string>
+    <string name="add_training">Add new training</string>
+</resources>
