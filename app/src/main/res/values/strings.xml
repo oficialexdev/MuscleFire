@@ -3,4 +3,18 @@
     <string name="client_id" translatable="false">650938734155-nt3slks5arlbvag62cu3borjfidguuh5.apps.googleusercontent.com</string>
     <string name="login_label">Login with Google</string>
     <string name="add_training">Add new training</string>
+    <string name="training">training</string>
+    <string name="exercise">exercise</string>
+    <string name="training_desc">training description</string>
+    <string name="training_num">training number</string>
+    <string name="define_time">Define time</string>
+    <string name="edit_training">Edit training</string>
+    <string name="about">About me</string>
+    <string name="logout">LogOut</string>
+    <string name="add_exercise">Add exercise</string>
+    <string name="exercise_obs">Exercise observations</string>
+    <string name="add_image">Add photo</string>
+    <string name="delete">delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="del_warning">Really want to delete?</string>
 </resources>

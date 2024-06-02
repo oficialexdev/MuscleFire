@@ -2,4 +2,18 @@
     <string name="app_name">Muscle Fire</string>
     <string name="login_label">Entrar com Google</string>
     <string name="add_training">Add novo treino</string>
+    <string name="training">treino</string>
+    <string name="exercise">exercício</string>
+    <string name="training_desc">descrição do treino</string>
+    <string name="training_num">número do treino</string>
+    <string name="define_time">Definir tempo</string>
+    <string name="edit_training">Editar treino</string>
+    <string name="about">Sobre mim</string>
+    <string name="logout">Sair</string>
+    <string name="add_exercise">Add exercício</string>
+    <string name="exercise_obs">Observações do exercício</string>
+    <string name="add_image">Add foto</string>
+    <string name="delete">deletar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="del_warning">Realmente deseja deletar?</string>
 </resources>

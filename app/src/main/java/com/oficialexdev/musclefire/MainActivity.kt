@@ -17,7 +17,6 @@ import com.oficialexdev.musclefire.ui.theme.MuscleFireTheme
 
 class MainActivity : ComponentActivity() {
     private lateinit var auth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         auth = Firebase.auth
@@ -29,7 +28,6 @@ class MainActivity : ComponentActivity() {
                     HomeComponent(auth.currentUser!!) {
                         signed = false
                     }
-
                 } else {
                     AuthComponent(auth) {
                         signed = true

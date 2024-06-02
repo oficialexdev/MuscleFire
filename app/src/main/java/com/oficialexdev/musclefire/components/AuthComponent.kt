@@ -12,19 +12,19 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
-import androidx.compose.runtime.SideEffect
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.ColorFilter
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -113,19 +113,17 @@ fun AuthComponent(auth: FirebaseAuth, signInCallBack: () -> Unit) {
                 Image(
                     painter = painterResource(id = R.drawable.musclefire),
                     contentDescription = "App Icon",
-                    Modifier
-                        .alpha(0.6f)
+                    colorFilter = ColorFilter.tint(MaterialTheme.colorScheme.primary),
                 )
                 Text(
                     text = stringResource(id = R.string.app_name),
                     fontSize = 32.sp,
-                    fontWeight = FontWeight.Black
+                    fontWeight = FontWeight.Black,
+                    color = MaterialTheme.colorScheme.primary
                 )
             }
             if (load) {
-                CircularProgressIndicator(
-                    color = if (isSystemInDarkTheme()) Color.White else Color.Black
-                )
+                CircularProgressIndicator()
             } else {
                 Button(onClick = {
                     load = true
@@ -134,9 +132,10 @@ fun AuthComponent(auth: FirebaseAuth, signInCallBack: () -> Unit) {
                     Image(
                         painter = painterResource(id = R.drawable.brand_google),
                         contentDescription = "Google Icon",
-                        Modifier.padding(end = 4.dp)
+                        Modifier.padding(end = 4.dp),
+                        colorFilter = ColorFilter.tint(if (isSystemInDarkTheme()) Color.Black else Color.White)
                     )
-                    Text(text = "Login with Google")
+                    Text(text = stringResource(id = R.string.login_label))
                 }
             }
         }
