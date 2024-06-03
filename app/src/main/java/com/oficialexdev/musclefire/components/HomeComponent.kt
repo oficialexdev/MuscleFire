@@ -119,9 +119,9 @@ fun HomeComponent(user: FirebaseUser, logOutCallback: () -> Unit) {
                     containerColor = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S)
                         if (isSystemInDarkTheme())
                             colorResource(
-                                id = android.R.color.system_accent1_600
+                                id = android.R.color.system_accent1_900
                             )
-                        else colorResource(id = android.R.color.system_accent1_300)
+                        else colorResource(id = android.R.color.system_accent1_100)
                     else
                         if (isSystemInDarkTheme())
                             Color.Black

@@ -22,6 +22,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.FilledIconButton
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.ModalBottomSheet
 import androidx.compose.material3.SheetState
@@ -229,8 +230,12 @@ fun TrainingView(
                 Arrangement.Top,
                 Alignment.CenterHorizontally
             ) {
-                data.forEach {
+                data.forEachIndexed { i, it ->
                     var showConfirmDelete: Boolean by remember { mutableStateOf(false) }
+                    if (i > 0) {
+                        HorizontalDivider()
+                    }
+
                     Row(
                         Modifier
                             .clickable(

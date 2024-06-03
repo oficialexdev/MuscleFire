@@ -3,8 +3,10 @@ package com.oficialexdev.musclefire.components.home
 import android.icu.util.Calendar
 import android.os.Build
 import androidx.compose.foundation.background
+import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
@@ -61,9 +63,9 @@ fun AppDateTimePicker(
                     .clip(RoundedCornerShape(8.dp))
                     .background(
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
-                            Color.Black
+                           if(isSystemInDarkTheme()) Color.Black else Color.White
                         else
-                            colorResource(id = android.R.color.system_accent1_900)
+                            if(isSystemInDarkTheme()) colorResource(id = android.R.color.system_accent1_900) else colorResource(id = android.R.color.system_accent1_100)
                     )
                     .padding(horizontal = 16.dp, vertical = 8.dp),
                 Arrangement.Center,
@@ -98,11 +100,12 @@ fun AppDateTimePicker(
             Column(
                 Modifier
                     .clip(RoundedCornerShape(8.dp))
+                    .fillMaxWidth()
                     .background(
                         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.S)
-                            Color.Black
+                            if(isSystemInDarkTheme()) Color.Black else Color.White
                         else
-                            colorResource(id = android.R.color.system_accent1_900)
+                            if(isSystemInDarkTheme()) colorResource(id = android.R.color.system_accent1_900) else colorResource(id = android.R.color.system_accent1_100)
                     ),
                 Arrangement.Center,
                 Alignment.CenterHorizontally
